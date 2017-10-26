@@ -2,9 +2,53 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Uso de JQuery</title>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+
+<script type="text/javascript">
+/*Para usar a biblioteca de JQuery, é necessário usar um
+caracter especial para fazer a chamada:($) ou JQuery
+*/
+$(document).ready(function(){
+	$('#principal').append('<p>Texto Novo</p>');
+	$('#primeiro').click(function(){
+		$('div').append('<h2>Estou aqui!</h2>');
+	});
+});
+
+
+
+
+</script>
+
+
 </head>
 <body>
+
+<header>
+	<h1>Página com JQuery</h1>
+</header>
+
+<main>
 	
+	<section id="principal">
+		<div>
+			<button id="primeiro">primeiro</button><br>
+
+			<div>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, molestias nihil et voluptatibus a asperiores! Possimus pariatur saepe fugit ut officiis, sint velit natus est, quas obcaecati asperiores distinctio quod.</div>
+			<div>Nostrum impedit, temporibus possimus optio nobis maiores laboriosam reprehenderit tenetur sunt voluptatum laborum nulla consequatur autem eius at, ipsum molestias accusamus sint officia magni, officiis labore non! Culpa, dolores, in.</div>
+			<div>Quibusdam voluptate in earum, quaerat nulla. Sed doloribus molestias odio, blanditiis voluptas veniam ipsum excepturi asperiores eaque, amet accusantium totam ad nesciunt recusandae! Dolores excepturi, obcaecati est reprehenderit sed aspernatur.</div>
+		</div>
+		<div>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo accusantium incidunt veritatis deserunt, corporis eveniet. Dolor minus error modi sapiente qui adipisci, accusantium reprehenderit, quidem ducimus, nemo aliquid in laboriosam.</div>
+			<div>Adipisci libero iure quae, id aspernatur officiis porro repudiandae non labore iste nisi. Laboriosam obcaecati voluptatem, odio sapiente debitis totam sit distinctio, vitae reiciendis rem aperiam quas! Pariatur, maxime, iste!</div>
+			<div>Perferendis natus ad eligendi laboriosam, esse dolor odit totam a? Dolorem consequuntur quod, placeat. Nulla numquam nesciunt, ex amet, fugit laborum error sapiente veritatis voluptas adipisci modi. Quasi, autem, quia!</div>
+		</div>
+	</section>
+
+</main>
+
+
 </body>
 </html>
